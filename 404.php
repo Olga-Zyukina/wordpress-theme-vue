@@ -2,11 +2,11 @@
 
 <main id="main" class="site-main container">
 	<div class="page-404-content">
-		<h1 class="error-code"><?php esc_html_e( 'Ошибка 404'); ?></h1>
-		<h2 class="page-title"><?php esc_html_e( 'Страница не найдена!' ); ?></h2>
-		<p><?php esc_html_e( 'К сожалению, ничего не найдено' ); ?></p>
+		<h1 class="error-code">Ошибка 404</h1>
+		<h2 class="page-title">Страница не найдена!</h2>
+		<p>К сожалению, ничего не найдено</p>
 		<div class="back_home">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php esc_html_e( 'Вернуться на главную' ); ?></a>
+			<a href="<?php echo home_url( '/' ); ?>" rel="home">Вернуться на главную</a>
 		</div>
 	</div>
 </main>

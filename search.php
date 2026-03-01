@@ -40,7 +40,9 @@
 					<div class="search__none">
 						<h3>По вашему запросу ничего не найдено</h3>
 						<div class="back_home">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php esc_html_e( 'Вернуться на главную' ); ?></a>
+						<a href="<?php echo home_url( '/' ); ?>" rel="home">
+							Вернуться на главную
+						</a>
 						</div>
 					</div>
 					

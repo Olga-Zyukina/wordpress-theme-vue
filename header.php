@@ -23,9 +23,9 @@
 				</a>
 			</div>
 			<div class="top-bar__search">
-				<?php echo get_search_form(); ?>
+				<?php get_search_form(); ?>
 			</div>	
-</div>  
+		</div>  
 		<div class="site-header container">  
 			<div class="site-header__logo">
 				<a href="<?=home_url(); ?>" rel="home" aria-current="page" class="site-header__link">
@@ -46,7 +46,7 @@
 				?>
 				<i class="mobile-nav-toggle fa fa-bars"></i>
 			</nav>		
-				</div>
+		</div>
 	</header>
 		<?php
 			if ( ! is_front_page() && (function_exists( 'yoast_breadcrumb' )) ) :

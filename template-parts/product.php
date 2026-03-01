@@ -3,7 +3,6 @@
 get_header(); ?>
 
 <div class="site-wrapper container">
-
 	<div class="site-grid">
 	<main class="site__content">
 		<div class="container-pro">
@@ -11,13 +10,10 @@ get_header(); ?>
 					<h2 class="active" data-id="250">Утеплитель</h2>
 					<h2 data-id="400">Стяжка пола</h2>
 					<h2 data-id="500">Конструктив</h2>
-
 					<span>Сухая полистиролбетонная смесь</span>
-
 					<img class="active" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/price/D250.jpg" alt="D250" data-id="250"/>
 					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/price/D400.jpg" alt="jpg" data-id="400"/>
 					<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/price/D500.jpg" alt="jpg" data-id="500"/>
-
 					<div class="product-price">
 						<span class="active" data-id="250">
 							490 ₽
@@ -29,11 +25,9 @@ get_header(); ?>
 							550 ₽
 						</span>
 					</div>
-
 				</div>
 				<div class="right-column">                           
 					<div class="product-description">
-
 						<p>Сухая полистиролбетонная смесь предназначена для утепления, шумоизоляции 
 							и устройства конструктивных элементов.</p>
 						<p>По своим энергосберегающим характеристикам полистиролбетон схож с минеральными 

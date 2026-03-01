@@ -12,7 +12,7 @@ get_header(); ?>
 				<?php
 					$current = absint(
 						max( 1,
-						get_query_var( 'paged' ) ? get_query_var( 'paged' ) : get_query_var( 'page' )
+						get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1
 						)
 						 ); 
 					$excerpt_length = 30;

@@ -20,8 +20,8 @@
 			</div>
 
 			<?php
-			if ( 'post' === get_post_type() ) {
-				$categories_list = get_the_category_list( esc_html__( ' ') );
+			if ( get_post_type() === 'post' ) {
+				$categories_list = get_the_category_list(' ');
 				if ( $categories_list ) {
 					echo '<div class="post-cat">' . $categories_list . '</div>';
 				}
@@ -29,7 +29,6 @@
 
 			if ( in_category( 48 ) ) {
 				?>
-
 				<div itemscope itemtype="https://schema.org/Question">
 					<h1 itemprop="name">
 							<?php the_title(); ?>
@@ -39,21 +38,19 @@
 							<?php the_content(); ?>
 						</div>
 					</div>
-				</div>
-				
+				</div>		
 				<?php
 			} else {
 				?>
-
 				<div class="post-content">
 					<?php the_content(); ?>
 				</div>
-
 				<?php
 			}
 
 			require get_template_directory() . '/template-parts/hooks/social-sharing.php';
 			do_action( 'psb_social_sharing' ,get_the_ID() );
+			
 			the_post_navigation(); ?>
 
 		</article>

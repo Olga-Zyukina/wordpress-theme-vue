@@ -9,10 +9,10 @@ get_header(); ?>
 <!-- !!!Для сайта поменять номера страниц калькуляторов!!! -->
       <select name="calc" class="select">
         <option selected="selected" disabled id="0" value="<?= esc_url( get_page_link( 10047 ) ); ?>">Выберите калькулятор</option>
-        <option id="1" value="<?= esc_url( get_page_link( 13599 ) ); ?>">Полистиролбетонный утеплитель</option>
-        <option id="2" value="<?= esc_url( get_page_link( 13609 ) ); ?>">Полистиробетонная стяжка пола</option>
-        <option id="3" value="<?= esc_url( get_page_link( 13612 ) ); ?>">Полистиролбетонная конструкция</option>
-        <option id="4" value="<?= esc_url( get_page_link( 13616 ) ); ?>">Полистиролбетонные блоки</option>
+        <option id="1" value="<?= esc_url( get_page_link( 14908 ) ); ?>">Полистиролбетонный утеплитель</option>
+        <option id="2" value="<?= esc_url( get_page_link( 14911 ) ); ?>">Полистиробетонная стяжка пола</option>
+        <option id="3" value="<?= esc_url( get_page_link( 14913 ) ); ?>">Полистиролбетонная конструкция</option>
+        <option id="4" value="<?= esc_url( get_page_link( 14915 ) ); ?>">Полистиролбетонные блоки</option>
         <option id="5" value="<?= esc_url( get_page_link( 10047 ) ); ?>">Ленточный фундамент</option>
         <option id="6" value="<?= esc_url( get_page_link( 10047 ) ); ?>">Плитный фундамент</option>
         <option id="7" value="<?= esc_url( get_page_link( 10047 ) ); ?>">Свайный фундамент</option>

@@ -20,5 +20,5 @@ if (!function_exists('psb_social_sharing')) :
 		<?php
 	}
 endif;
-add_action('psb_social_sharing', 'psb_social_sharing', 10);
+add_action('psb_social_sharing', 'psb_social_sharing');
 ?>

@@ -2,7 +2,9 @@
 /**
  * Template Name: Front-page
  */
-get_header(); ?>
+get_header(); 
+?>
+
 <main id="main" class="site-wrapper container">
 	<section class="site-start">
 		<div class="site-start__wrap">
@@ -86,19 +88,18 @@ get_header(); ?>
 				<?php get_template_part ( 'template-parts/sections/site-ads' ); ?>	
 				<div class="site-start__calc">
 					<h2 class="site-section_title">Калькулятор</h2>
-					<!-- !!!Для сайта поменять номера страниц калькуляторов!!! -->
-							<a href="<?php echo get_permalink(13616); ?>" class="calc-item">
-								<h3>Полистиролбетонные блоки</h3>
-							</a>
-							<a href="<?php echo get_permalink(13599); ?>" class="calc-item">
-								<h3>Утеплитель из полистиролбетона</h3>
-							</a>
-							<a href="<?php echo get_permalink(13609); ?>" class="calc-item">
-								<h3>Полистиролбетонная стяжка пола</h3>
-							</a>
-							<a href="<?php echo get_permalink(13612); ?>" class="calc-item">
-								<h3>Конструкция из полистиролбетона</h3>
-							</a>
+					<a href="<?php echo get_permalink(14915); ?>" class="calc-item">
+						<h3>Полистиролбетонные блоки</h3>
+					</a>
+					<a href="<?php echo get_permalink(14908); ?>" class="calc-item">
+						<h3>Утеплитель из полистиролбетона</h3>
+					</a>
+					<a href="<?php echo get_permalink(14911); ?>" class="calc-item">
+						<h3>Полистиролбетонная стяжка пола</h3>
+					</a>
+					<a href="<?php echo get_permalink(14913); ?>" class="calc-item">
+						<h3>Конструкция из полистиролбетона</h3>
+					</a>
 				</div>
 			</div>
 		</div>

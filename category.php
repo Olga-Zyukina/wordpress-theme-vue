@@ -16,7 +16,7 @@
 							the_post(); ?>
 
 							<div class="category__item">
-								<?php the_post_thumbnail(''); ?>
+								<?php the_post_thumbnail(); ?>
 								<div class="category__card">							
 									<a href="<?php the_permalink(); ?>">
 										<h2>

@@ -1,7 +1,6 @@
 <?php
 /** Template Name: FAQ */
 get_header(); ?>
-
 <div class="site-wrapper container">
 	<div class="site-grid">
 		<main class="site__content">
@@ -23,7 +22,6 @@ get_header(); ?>
 						'ignore_sticky_posts' => true
 						);
 					$query = new WP_Query($query_args);
-
 					if ($query->have_posts()) :
 						while ($query->have_posts()) :
 							$query->the_post();
@@ -34,9 +32,7 @@ get_header(); ?>
 										<?php the_title(); ?>
 									</span>
 								</summary>
-
 								<?php the_content(); ?>
-
 							</details>
 						<?php
 						endwhile;          
