@@ -49,6 +49,6 @@ wordpress-theme-vue/
 └─ sitemap.php
 ```
 
-<div><img src="https://github.com/Olga-Zyukina/wordpress-theme-vue/blob/master/Screenshot.png" title="wordpress-theme-vue" alt="e-commerce-vue3-vite"/></div>
+<div><img src="https://github.com/Olga-Zyukina/wordpress-theme-vue/blob/master/Screenshot_frontage.png" title="wordpress-theme-vue" alt="e-commerce-vue3-vite"/></div>
 Calculator page
 <div><img src="https://github.com/Olga-Zyukina/wordpress-theme-vue/blob/master/Screenshot_calc.png" title="wordpress-theme-vue" alt="e-commerce-vue3-vite"/></div>

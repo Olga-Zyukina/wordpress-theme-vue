@@ -41,39 +41,40 @@
 	function add_scripts_and_styles() { 	
     wp_enqueue_style('font', get_template_directory_uri().'/font-ibmplex/font-ibmplex.min.css');
     wp_enqueue_style('icon', get_template_directory_uri().'/font-awesome/font-awesome.min.css');
-		wp_enqueue_style('style-css', get_template_directory_uri().'/style.min.css', array('font', 'icon'));
+		wp_enqueue_style('main', get_template_directory_uri().'/dist/css/main.min.css', array('font', 'icon'));
+		wp_enqueue_style('style-css', get_template_directory_uri().'/style.css');
 
 		if ( is_page_template ('front-page.php') ) {
-			wp_enqueue_script('front-page-js', get_template_directory_uri() . '/js/front-page.min.js', null, null, true );
-			wp_enqueue_style('front-page-css', get_template_directory_uri().'/css/front-page.min.css');
+			wp_enqueue_script('front-page-js', get_template_directory_uri() . '/dist/js/frontPage.min.js', null, null, true );
+			wp_enqueue_style('front-page-css', get_template_directory_uri().'/dist/css/frontPage.min.css');
 		}
 		if(is_page_template('template-parts/faq.php')) {	
-			wp_enqueue_script('details-js', get_template_directory_uri() . '/js/details.min.js', null, null, true );
+			wp_enqueue_script('details-js', get_template_directory_uri() . '/dist/js/details.min.js', null, null, true );
 		}
 		if(is_page_template('template-parts/calc.php')) {
-			wp_enqueue_script('calc-js', get_template_directory_uri() . '/js/calc.min.js', null, null, true );
+			wp_enqueue_script('calc-js', get_template_directory_uri() . '/dist/js/calc.min.js', null, null, true );
 		}
 		if(is_page( 14908 )) {
-			wp_enqueue_script('calcD300-js', get_template_directory_uri() . '/js/calcD300.js', null, null, true );
-			wp_enqueue_style('calcD300-css', get_template_directory_uri().'/css/calcD300.css');
+			wp_enqueue_script('calcD300-js', get_template_directory_uri() . '/dist/js/calcD300.js', null, null, true );
+			wp_enqueue_style('calcD300-css', get_template_directory_uri().'/dist/css/calcD300.css');
 		}
 		if(is_page( 14911 )) {
-			wp_enqueue_script('calcD400-js', get_template_directory_uri() . '/js/calcD400.js', null, null, true );
-			wp_enqueue_style('calcD400-css', get_template_directory_uri().'/css/calcD400.css');
+			wp_enqueue_script('calcD400-js', get_template_directory_uri() . '/dist/js/calcD400.js', null, null, true );
+			wp_enqueue_style('calcD400-css', get_template_directory_uri().'/dist/css/calcD400.css');
 		}
 		if(is_page( 14913 )) {
-			wp_enqueue_script('calcD500-js', get_template_directory_uri() . '/js/calcD500.js', null, null, true );
-			wp_enqueue_style('calcD500-css', get_template_directory_uri().'/css/calcD500.css');
+			wp_enqueue_script('calcD500-js', get_template_directory_uri() . '/dist/js/calcD500.js', null, null, true );
+			wp_enqueue_style('calcD500-css', get_template_directory_uri().'/dist/css/calcD500.css');
 		}
 		if(is_page( 14915 )) {
-			wp_enqueue_script('calcBlock-js', get_template_directory_uri() . '/js/calcBlock.js', null, null, true );
-			wp_enqueue_style('calcBlock-css', get_template_directory_uri().'/css/calcBlock.css');
+			wp_enqueue_script('calcBlock-js', get_template_directory_uri() . '/dist/js/calcBlock.js', null, null, true );
+			wp_enqueue_style('calcBlock-css', get_template_directory_uri().'/dist/css/calcBlock.css');
 		}
 		if(is_page_template('template-parts/product.php')) {
-			wp_enqueue_script('switch-js', get_template_directory_uri() . '/js/switch.min.js', null, null, true );
+			wp_enqueue_script('switch-js', get_template_directory_uri() . '/dist/js/switch.min.js', null, null, true );
 		}
-		wp_enqueue_script('preloader-js', get_template_directory_uri() . '/js/preloader.min.js', null, null, true );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-		wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js', null, null, true);
+		wp_enqueue_script('preloader-js', get_template_directory_uri() . '/dist/js/preloader.min.js', null, null, true );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+		wp_enqueue_script('main-js', get_template_directory_uri() . '/dist/js/main.min.js', null, null, true);
 	} 
 	function add_script_data() {
 		wp_script_add_data( 'front-page-js', 'async', true );

@@ -1,0 +1,19 @@
+{
+  "name": "polistirolbetonfirst",
+  "version": "1.0.0",
+  "description": "WordPress Theme + Vue 3 Calculator",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^10.1.1",
+    "css-loader": "^7.1.4",
+    "mini-css-extract-plugin": "^2.10.1",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.2"
+  }
+}
