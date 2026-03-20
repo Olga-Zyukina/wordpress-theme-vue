@@ -5,6 +5,7 @@ WordPress Theme + Vue 3 Calculator
 
 ## Features
 
+- Classic WordPress Theme
 - Multi-page website
 - Page About
 - Page Product
@@ -33,10 +34,10 @@ Check out the live demo: [полистиролбетон.com](https://xn--90aiha
 
 ```
 wordpress-theme-vue/
-├─ css/
+├─ dist/
 ├─ font/
 ├─ img/
-├─ js/
+├─ src/
 ├─ template-parts/
 ├─ 404.php
 ├─ category.php
@@ -49,6 +50,6 @@ wordpress-theme-vue/
 └─ sitemap.php
 ```
 
-<div><img src="https://github.com/Olga-Zyukina/wordpress-theme-vue/blob/master/Screenshot_frontage.png" title="wordpress-theme-vue" alt="e-commerce-vue3-vite"/></div>
+<div><img src="https://github.com/Olga-Zyukina/wordpress-theme-vue/blob/master/Screenshot_frontpage.png" title="wordpress-theme-vue" alt="wordpress-theme-vue"/></div>
 Calculator page
-<div><img src="https://github.com/Olga-Zyukina/wordpress-theme-vue/blob/master/Screenshot_calc.png" title="wordpress-theme-vue" alt="e-commerce-vue3-vite"/></div>
+<div><img src="https://github.com/Olga-Zyukina/wordpress-theme-vue/blob/master/Screenshot_calc.png" title="wordpress-theme-vue" alt="wordpress-theme-vue"/></div>
