@@ -1,7 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const TerserPlugin = require('terser-webpack-plugin');
+const TerserPlugin = require("terser-webpack-plugin");
 module.exports = (env, argv) => {
   return {
     entry: {
@@ -47,12 +47,12 @@ module.exports = (env, argv) => {
           test: /\.(scss|css)$/,
           use: [
             MiniCssExtractPlugin.loader,
-                   {
-            loader: 'css-loader',
-            options: {
-              url: false  // Let WordPress handle image URLs
-            }
-          }
+            {
+              loader: "css-loader",
+              options: {
+                url: false,
+              },
+            },
           ],
         },
       ],
