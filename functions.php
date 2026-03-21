@@ -55,20 +55,20 @@
 			wp_enqueue_script('calc-js', get_template_directory_uri() . '/dist/js/calc.min.js', null, null, true );
 		}
 		if(is_page( 14908 )) {
-			wp_enqueue_script('calcD300-js', get_template_directory_uri() . '/dist/js/calcD300.js', null, null, true );
-			wp_enqueue_style('calcD300-css', get_template_directory_uri().'/dist/css/calcD300.css');
+			wp_enqueue_script('calcD300-js', get_template_directory_uri() . '/dist/js/calcD300.min.js', null, null, true );
+			wp_enqueue_style('calcD300-css', get_template_directory_uri().'/dist/css/calcD300.min.css');
 		}
 		if(is_page( 14911 )) {
-			wp_enqueue_script('calcD400-js', get_template_directory_uri() . '/dist/js/calcD400.js', null, null, true );
-			wp_enqueue_style('calcD400-css', get_template_directory_uri().'/dist/css/calcD400.css');
+			wp_enqueue_script('calcD400-js', get_template_directory_uri() . '/dist/js/calcD400.min.js', null, null, true );
+			wp_enqueue_style('calcD400-css', get_template_directory_uri().'/dist/css/calcD400.min.css');
 		}
 		if(is_page( 14913 )) {
-			wp_enqueue_script('calcD500-js', get_template_directory_uri() . '/dist/js/calcD500.js', null, null, true );
-			wp_enqueue_style('calcD500-css', get_template_directory_uri().'/dist/css/calcD500.css');
+			wp_enqueue_script('calcD500-js', get_template_directory_uri() . '/dist/js/calcD500.min.js', null, null, true );
+			wp_enqueue_style('calcD500-css', get_template_directory_uri().'/dist/css/calcD500.min.css');
 		}
 		if(is_page( 14915 )) {
-			wp_enqueue_script('calcBlock-js', get_template_directory_uri() . '/dist/js/calcBlock.js', null, null, true );
-			wp_enqueue_style('calcBlock-css', get_template_directory_uri().'/dist/css/calcBlock.css');
+			wp_enqueue_script('calcBlock-js', get_template_directory_uri() . '/dist/js/calcBlock.min.js', null, null, true );
+			wp_enqueue_style('calcBlock-css', get_template_directory_uri().'/dist/css/calcBlock.min.css');
 		}
 		if(is_page_template('template-parts/product.php')) {
 			wp_enqueue_script('switch-js', get_template_directory_uri() . '/dist/js/switch.min.js', null, null, true );

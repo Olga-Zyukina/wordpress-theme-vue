@@ -6,7 +6,6 @@ get_header(); ?>
 	<div class="site-grid">
 		<main class="site__content calc">
       <h1>Строительный калькулятор</h1>
-<!-- !!!Для сайта поменять номера страниц калькуляторов!!! -->
       <select name="calc" class="select">
         <option selected="selected" disabled id="0" value="<?= esc_url( get_page_link( 10047 ) ); ?>">Выберите калькулятор</option>
         <option id="1" value="<?= esc_url( get_page_link( 14908 ) ); ?>">Полистиролбетонный утеплитель</option>

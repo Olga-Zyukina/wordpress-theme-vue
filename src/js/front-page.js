@@ -1,4 +1,4 @@
-import '../css/front-page.css';
+// import '../css/front-page.css';
 (function() {
 	"use strict";
 	function onClickCircle(event) {

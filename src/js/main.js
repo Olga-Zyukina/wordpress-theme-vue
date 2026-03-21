@@ -1,4 +1,4 @@
-import '../css/main.css';
+// import '../css/main.css';
 (function() {
   "use strict";
   const select = (el, all = false) => {

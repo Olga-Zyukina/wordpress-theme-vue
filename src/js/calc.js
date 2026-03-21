@@ -11,27 +11,30 @@
       }
     );
 
-  if (parseInt(getOptionvalue) >= 0 && parseInt(getOptionvalue) < 5) {
+  if (parseInt(getOptionvalue) >= 0 && parseInt(getOptionvalue) < 5 && selectedIndex !== null) {
     selectedIndex = getOptionvalue;
-  } else if (selectedIndex == null) {
+  } 
+  else if (selectedIndex === null) {
     selectedIndex = 0;
   }
+          
 
   sessionStorage.setItem("selectedIndex", selectedIndex);
   selectedIndex = sessionStorage.getItem("selectedIndex");
   select.selectedIndex = selectedIndex;
-
   document.querySelectorAll("select").forEach(function (el) {
     el.addEventListener("change", function (e) {
+
       sessionStorage.setItem("selectedIndex", select.selectedIndex);
       selectedIndex = sessionStorage.getItem("selectedIndex");
+      console.log(selectedIndex)
+
       var option =
         document.querySelectorAll("option")[e.target.selectedIndex].value;
       if (document.location.href != option) {
         document.location.href = option;
       } else if (selectedIndex > 4) {
         document.querySelector(".calc iframe").style.display = "block";
-
         getIframeSrc(selectedIndex);
       }
     });
@@ -110,4 +113,5 @@
         break;
     }
   }
+
 })();
