@@ -24,15 +24,10 @@ get_header(); ?>
         <option id="14" value="<?= esc_url( get_page_link( 10047 ) ); ?>">Мансардная крыша</option>
         <option id="15" value="<?= esc_url( get_page_link( 10047 ) ); ?>">Вальмовая крыша</option>
       </select>
-      
       <iframe id="stroi-calc" src="" width="100%" height="2000"></iframe>
       <div id="app"></div>
-
     </main>
-    <aside class="site__right-column">
-			<?php get_template_part ( 'template-parts/sections/site-ads' ); ?>	
-			<?php get_template_part ( 'template-parts/sections/posts-popular' ); ?>		
-    </aside>
+		<?php get_sidebar('ads'); ?>
   </div>
 	<section class="site-new-posts">
 		<?php get_template_part ( 'template-parts/sections/posts-new' ); ?>		

@@ -9,10 +9,8 @@
 				</div>
 			</article>
 		</main>
-		<aside class="site__right-column">
-			<?php get_template_part ( 'template-parts/sections/site-ads' ); ?>	
-			<?php get_template_part ( 'template-parts/sections/posts-popular' ); ?>		
-		</aside>	
+		<?php get_sidebar('ads'); ?>
+		</div>	
 	</div>
 	<section class="site-new-posts">
 		<?php get_template_part ( 'template-parts/sections/posts-new' ); ?>		

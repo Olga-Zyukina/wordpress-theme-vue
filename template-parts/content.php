@@ -11,8 +11,6 @@
 			<div class="post-meta">
 				<i class="fa fa-user-circle-o"></i>
 				<?php the_author(); ?>
-				<!-- <i class="fa fa-clock-o"></i> -->
-				<!-- <?php the_date(); ?> -->
 				<span class="meta_views">
 					<i class="fa fa-eye"></i>
 					<?php echo get_post_views(get_the_ID()); ?>
@@ -55,10 +53,7 @@
 
 		</article>
 	</main>
-	<aside class="site__right-column">
-		<?php get_template_part ( 'template-parts/sections/site-ads' ); ?>
-		<?php get_template_part ( 'template-parts/sections/posts-popular' ); ?>
-	</aside>
+	<?php get_sidebar('ads'); ?>
 </div>
 <section class="site-new-posts">
 	<?php get_template_part ( 'template-parts/sections/posts-new' ); ?>
