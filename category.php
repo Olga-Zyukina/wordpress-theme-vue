@@ -42,8 +42,7 @@
 				?>
 			</div>
 		</main>
-		<?php get_sidebar('ads'); ?>
-		</div>	
+		<?php get_sidebar('posts'); ?>
 	</div>
 	<section class="site-new-posts">
 			<?php get_template_part ( 'template-parts/sections/posts-new' ); ?>		

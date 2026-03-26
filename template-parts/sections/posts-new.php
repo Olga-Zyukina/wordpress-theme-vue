@@ -1,6 +1,23 @@
+	<?php
+	$frontpage = 'front-page.php';
+	if ( is_page_template($frontpage) ) {
+		$title_open_tag = '<h2>';
+		$title_close_tag = '</h2>';
+		$post_open_tag = '<h3 class="posts-new__title">';
+		$post_close_tag = '</h3>';
+	} else {
+		$title_open_tag = '<h4>';
+		$title_close_tag = '</h4>';
+		$post_open_tag = '<h5 class="posts-new__title">';
+		$post_close_tag = '</h5>';
+	}
+	?>
+
 <div class="new-wrapper">
 	<div class="site-section__title">
-		<h4>Новые статьи</h4>
+		<?php echo $title_open_tag ?>
+		Новые статьи
+		<?php echo $title_close_tag ?>
 	</div>	
 	<div class="posts-new">
 		<?php
@@ -8,7 +25,6 @@
 			$query_args = array(
 				'post_type' => 'post',
 				'cat' => [-1, -8, -14, -16, -20, -25, -34, -41, -42, -45, -48, -49, -51, -54],
-				// 'post__in' => [13949,14807,14846,12840],
 				'orderby'  => 'rand',
 				'posts_per_page' => 3
 			);
@@ -53,9 +69,9 @@
 							yoast_get_primary_term( 'category', $post->ID ) . '</span>';  
 							echo $html;
 							?>
-							<h3 class="posts-new__title">								
+							<?php echo $post_open_tag ?>
 								<?php the_title(); ?>
-							</h3>
+							<?php echo $post_close_tag ?>
 							<?php echo wp_trim_words(get_the_content(),$excerpt_length); ?>
 							<a href="<?php the_permalink(); ?>" class="posts-new__link">
 								<span>Читать далее</span>

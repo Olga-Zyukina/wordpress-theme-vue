@@ -29,10 +29,10 @@
       if(empty($views) || !is_numeric($views)){
         delete_post_meta($post->ID, $views_key);
         add_post_meta($post->ID, $views_key, '1');
-      }
-		else
+      } else {	
 			update_post_meta($post->ID, $views_key, ++$views);
-    }
+    	}
+		}
 	}
 	
 	add_action('wp_enqueue_scripts', 'add_scripts_and_styles');
@@ -104,7 +104,6 @@
 		return $src;
 	}
 	
-
 	add_filter('manage_posts_columns', 'posts_column_views');
 	function posts_column_views($defaults){
     $defaults['post_views'] = __('Просмотры');

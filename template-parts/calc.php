@@ -27,7 +27,7 @@ get_header(); ?>
       <iframe id="stroi-calc" src="" width="100%" height="2000"></iframe>
       <div id="app"></div>
     </main>
-		<?php get_sidebar('ads'); ?>
+		<?php get_sidebar('posts'); ?>
   </div>
 	<section class="site-new-posts">
 		<?php get_template_part ( 'template-parts/sections/posts-new' ); ?>		

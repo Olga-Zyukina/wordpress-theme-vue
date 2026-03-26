@@ -338,7 +338,7 @@ get_header();
 		</div>
 	</section>
 	<section class="site-new-posts">
-		<?php get_template_part ( 'template-parts/sections/posts-new-2' ); ?>		
+		<?php get_template_part ( 'template-parts/sections/posts-new' ); ?>		
 	</section>
 </main>
 <?php get_footer(); ?>

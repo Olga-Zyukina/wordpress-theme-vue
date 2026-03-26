@@ -306,10 +306,7 @@ get_header(); ?>
 				</table>
 		</div>  
 	</main>
-	<aside class="site__right-column">
-		<?php get_template_part ( 'template-parts/sections/site-ads' ); ?>	
-		<?php get_template_part ( 'template-parts/sections/posts-popular-2' ); ?>		
-	</aside>
+	<?php get_sidebar('posts'); ?>
 	</div>
 	<section class="site-new-post">
 		<?php get_template_part ( 'template-parts/sections/posts-new' ); ?>		
