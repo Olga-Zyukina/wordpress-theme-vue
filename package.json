@@ -17,5 +17,8 @@
     "terser-webpack-plugin": "^5.4.0",
     "webpack": "^5.105.4",
     "webpack-cli": "^7.0.2"
+  },
+  "dependencies": {
+    "@wordpress/components": "^32.4.0"
   }
 }

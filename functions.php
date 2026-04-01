@@ -70,7 +70,7 @@
 			wp_enqueue_script('calcBlock-js', get_template_directory_uri() . '/dist/js/calcBlock.min.js', null, null, true );
 			wp_enqueue_style('calcBlock-css', get_template_directory_uri().'/dist/css/calcBlock.min.css');
 		}
-		if(is_page_template('template-parts/product.php')) {
+		if(is_page_template(['template-parts/product.php'])) {
 			wp_enqueue_script('switch-js', get_template_directory_uri() . '/dist/js/switch.min.js', null, null, true );
 		}
 		wp_enqueue_script('preloader-js', get_template_directory_uri() . '/dist/js/preloader.min.js', null, null, true );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
