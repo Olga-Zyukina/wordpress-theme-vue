@@ -50,6 +50,13 @@ wordpress-theme-vue/
 └─ sitemap.php
 ```
 
+## Docker
+- Building images & run containers
+`docker compose up`<br/>
+- Open browser to install Wordpress: localhost:8080<br/>
+After installing Wordpress, create pages and menus, and specify the front-page.<br/>
+- Open browser to access the database in Adminer: localhost:8081
+
 <div><img src="https://github.com/Olga-Zyukina/wordpress-theme-vue/blob/master/Screenshot_frontpage.png" title="wordpress-theme-vue" alt="wordpress-theme-vue"/></div>
 Calculator page
 <div><img src="https://github.com/Olga-Zyukina/wordpress-theme-vue/blob/master/Screenshot_calc.png" title="wordpress-theme-vue" alt="wordpress-theme-vue"/></div>
